@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+/* Your custom styles */
+body {
+  background-color: #fffef9; /* posa-cream */
+}
+
+/* Hide scrollbar but keep scrolling functionality */
+* {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+*::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
