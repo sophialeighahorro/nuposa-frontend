@@ -3,7 +3,6 @@ import gardenCat from "../assets/gardenCat.jpg";
 import mendCat from "../assets/mendCat.jpg";
 import arawCat from "../assets/arawCat.jpg";
 import catwHand from "../assets/catwHand.jpg";
-import storiesClip from "../assets/storiesClip.png";
 
 export default function Stories() {
   const stories = [
@@ -47,12 +46,9 @@ export default function Stories() {
       <div className="max-w-7xl mx-auto text-center mb-16">
         <h2
           className="font-black text-6xl sm:text-7xl lg:text-8xl text-[#add3fa] relative inline-block"
-          style={{
-            textShadow:
-              "2px 2px 0 #6b7280, -2px 2px 0 #6b7280, 2px -2px 0 #6b7280, -2px -2px 0 #6b7280, 3px 3px 0 rgba(255,255,255,0.8)",
-          }}
+          style={{ textShadow: "3px 3px 0px rgba(255,255,255,0.8)" }}
         >
-          Community Stories
+          stories
         </h2>
       </div>
 

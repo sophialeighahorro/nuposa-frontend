@@ -3,6 +3,8 @@ import Header from "./components/Header";
 import Hero from "./components/Hero";
 import LandingImage from "./components/LandingImage";
 import Stories from "./components/Stories";
+import Mission from "./components/Mission";
+import Footer from "./components/Footer";
 
 export default function App() {
   return (
@@ -17,6 +19,8 @@ export default function App() {
       </main>
 
       <Stories />
+      <Mission />
+      <Footer />
     </div>
   );
 }

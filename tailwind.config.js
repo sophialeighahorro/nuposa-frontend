@@ -13,7 +13,7 @@ export default {
         "posa-yellow": "#faefc3", // Yellow (Accents)
         "posa-yellow-light": "#fafad5", // Lighter Yellow
 
-        "posa-cream": "#fffff6", // Main Background (Off-white)
+        "posa-cream": "#fffef9", // Main Background (Off-white)
         "posa-gray": "#464646", // Main Text (Dark Gray)
       },
       fontFamily: {
