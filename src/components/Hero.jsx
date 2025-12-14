@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Hero() {
   return (
@@ -17,10 +18,13 @@ export default function Hero() {
       </p>
 
       {/* View Cats Button */}
-      <div className="mt-4 lg:mt-6">
-        <button className="bg-[#fadfaa] text-white font-bold text-lg sm:text-xl lg:text-[24px] px-6 sm:px-8 lg:px-[37px] py-3 sm:py-4 lg:py-[16px] rounded-full lg:rounded-[117px] hover:bg-[#f5d599] hover:scale-105 hover:shadow-lg transition-all duration-300 ease-in-out">
+      <div className="mt-4 lg:mt-15">
+        <Link
+          to="/cats"
+          className="bg-[#fadfaa] text-white font-bold text-lg sm:text-xl lg:text-[24px] px-6 sm:px-8 lg:px-[37px] py-3 sm:py-4 lg:py-[16px] rounded-full lg:rounded-[117px] hover:bg-[#f5d599] hover:scale-105 hover:shadow-lg transition-all duration-300 ease-in-out"
+        >
           View Cats
-        </button>
+        </Link>
       </div>
     </div>
   );

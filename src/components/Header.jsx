@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import nuposaLogo from "../assets/nuposaLogo.png";
 
 export default function Header() {
@@ -16,36 +17,57 @@ export default function Header() {
 
         {/* Navigation */}
         <nav className="flex flex-wrap justify-center gap-4 sm:gap-6 lg:gap-8 mt-4 lg:mt-0 lg:absolute lg:left-1/2 lg:-translate-x-1/2 lg:top-[48px] text-sm sm:text-base lg:text-[20px] text-[#464646]">
-          <a
-            href="#home"
-            className="font-bold hover:text-[#b9ebfa] transition-all"
+          <NavLink
+            to="/"
+            className={({ isActive }) =>
+              `${
+                isActive ? "font-bold text-[#b9ebfa]" : "font-bold"
+              } hover:text-[#b9ebfa] transition-all`
+            }
+            end
           >
             HOME
-          </a>
-          <a
-            href="#cats"
-            className="font-medium hover:text-[#b9ebfa] transition-all"
+          </NavLink>
+          <NavLink
+            to="/cats"
+            className={({ isActive }) =>
+              `${
+                isActive ? "font-medium text-[#b9ebfa]" : "font-medium"
+              } hover:text-[#b9ebfa] transition-all`
+            }
           >
             CATS
-          </a>
-          <a
-            href="#volunteer"
-            className="font-medium hover:text-[#b9ebfa] transition-all"
+          </NavLink>
+          <NavLink
+            to="/volunteer"
+            className={({ isActive }) =>
+              `${
+                isActive ? "font-medium text-[#b9ebfa]" : "font-medium"
+              } hover:text-[#b9ebfa] transition-all`
+            }
           >
             VOLUNTEER
-          </a>
-          <a
-            href="#donate"
-            className="font-medium hover:text-[#b9ebfa] transition-all"
+          </NavLink>
+          <NavLink
+            to="/donate"
+            className={({ isActive }) =>
+              `${
+                isActive ? "font-medium text-[#b9ebfa]" : "font-medium"
+              } hover:text-[#b9ebfa] transition-all`
+            }
           >
             DONATE
-          </a>
-          <a
-            href="#care"
-            className="font-medium hover:text-[#b9ebfa] transition-all"
+          </NavLink>
+          <NavLink
+            to="/care"
+            className={({ isActive }) =>
+              `${
+                isActive ? "font-medium text-[#b9ebfa]" : "font-medium"
+              } hover:text-[#b9ebfa] transition-all`
+            }
           >
             CARE
-          </a>
+          </NavLink>
         </nav>
 
         {/* Divider */}
