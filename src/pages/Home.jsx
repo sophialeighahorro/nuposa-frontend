@@ -10,7 +10,7 @@ export default function Home() {
       <main className="relative w-full px-4 sm:px-8 lg:px-0 mt-8 lg:mt-0 min-h-[800px] lg:min-h-[900px]">
         <div className="flex flex-col lg:flex-row lg:items-start gap-8 lg:gap-0">
           <Hero />
-          <LandingImage />
+          <LandingImage />  
         </div>
       </main>
 

@@ -8,9 +8,9 @@ import email from "../assets/Email.png";
 export default function Footer() {
   return (
     <footer className="relative w-full bg-[#faefc3] overflow-hidden py-8 px-4 sm:px-8">
-      <div className="max-w-[1440px] mx-auto relative h-[150px]">
+      <div className="max-w-screen-2xl mx-auto relative h-[150px]">
         {/* Cat Image - Left Side */}
-        <div className="relative left-0 bottom-28 w-[200px] h-[200px] sm:w-[280px] sm:h-[280px] lg:w-[350px] lg:h-[350px]">
+        <div className="relative left-0 bottom-28 w-50 h-50 sm:w-70 sm:h-70 lg:w-[350px] lg:h-[350px]">
           <img
             src={catFooter}
             alt="Campus cat"
@@ -19,7 +19,7 @@ export default function Footer() {
         </div>
 
         {/* Logo - Center */}
-        <div className="absolute left-1/2 -translate-x-1/2 top-0 w-[140px] h-[140px] sm:w-[180px] sm:h-[150px]">
+        <div className="absolute left-1/2 -translate-x-1/2 top-0 w-35 h-35 sm:w-45 sm:h-[150px]">
           <img
             src={nuposaLogo}
             alt="NU Posa Logo"
@@ -33,7 +33,7 @@ export default function Footer() {
             href="https://instagram.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-[32px] h-[32px] sm:w-[40px] sm:h-[40px] hover:scale-110 transition-transform"
+            className="w-8 h-8 sm:w-10 sm:h-10 hover:scale-110 transition-transform"
           >
             <img
               src={instagram}
@@ -45,7 +45,7 @@ export default function Footer() {
             href="https://facebook.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-[32px] h-[32px] sm:w-[40px] sm:h-[40px] hover:scale-110 transition-transform"
+            className="w-8 h-8 sm:w-10 sm:h-10 hover:scale-110 transition-transform"
           >
             <img
               src={facebook}
@@ -55,7 +55,7 @@ export default function Footer() {
           </a>
           <a
             href="mailto:nuposa@example.com"
-            className="w-[32px] h-[32px] sm:w-[40px] sm:h-[40px] hover:scale-110 transition-transform"
+            className="w-8 h-8 sm:w-10 sm:h-10 hover:scale-110 transition-transform"
           >
             <img
               src={email}

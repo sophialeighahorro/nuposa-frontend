@@ -41,14 +41,17 @@ export default function Stories() {
   ];
 
   return (
-    <section className="relative w-full pt-16 pb-20 px-4 sm:px-8 bg-[#fafad5] overflow-hidden min-h-[900px] lg:min-h-[1000px]">
+    <section className="relative w-full pt-16 pb-20 px-4 sm:px-8 bg-[#fafad5] overflow-hidden min-h-225 lg:min-h-250">
       {/* Stories Header */}
       <div className="max-w-7xl mx-auto text-center mb-16">
         <h2
           className="font-black text-6xl sm:text-7xl lg:text-8xl text-[#add3fa] relative inline-block"
-          style={{ textShadow: "3px 3px 0px rgba(255,255,255,0.8)" }}
+          style={{
+            WebkitTextStroke: "4px #464646",
+            paintOrder: "stroke fill",
+          }}
         >
-          stories
+          Community Stories
         </h2>
       </div>
 
