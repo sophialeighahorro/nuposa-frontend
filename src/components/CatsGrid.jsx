@@ -228,12 +228,13 @@ export default function CatsGrid() {
     <>
       <div className="max-w-6xl mx-auto">
         <h1
-          className="text-6xl sm:text-7xl font-black text-[#add3fa] mb-8 text-center"
+          className="text-6xl sm:text-7xl font-black mb-8 text-center"
           style={{
-            WebkitTextStroke: "2px #464646",
+            WebkitTextStroke: "1.5px #464646",
           }}
         >
-          Meet Our Cats
+          <span className="text-[#add3fa]">Meet Our</span>{" "}
+          <span className="text-[#fadfaa]">Cats</span>
         </h1>
 
         {loadingCats && (

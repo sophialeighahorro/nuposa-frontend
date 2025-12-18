@@ -1,5 +1,6 @@
 import React from "react";
+import CareSection from "../components/CareSection";
 
 export default function Care() {
-  return <div className="p-6">Care Page</div>;
+  return <CareSection />;
 }

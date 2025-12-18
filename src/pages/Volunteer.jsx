@@ -4,8 +4,7 @@ import VolunteerForm from "../components/VolunteerForm";
 
 export default function Volunteer() {
   return (
-    <div className="relative w-full min-h-screen bg-posa-yellow overflow-x-hidden">
-
+    <div className="relative w-full min-h-screen bg-[#fafad5] overflow-x-hidden">
       {/* Volunteer Form Section */}
       <VolunteerForm />
     </div>

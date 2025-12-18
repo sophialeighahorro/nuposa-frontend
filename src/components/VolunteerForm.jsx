@@ -113,7 +113,7 @@ export default function VolunteerForm() {
 
         {/* LEFT COLUMN: Image with Paw/Blob Shape */}
         <div className="relative z-10 transform -rotate-3 transition-transform hover:rotate-0 duration-300">
-          <div className="w-full max-w-sm rounded-[3rem] overflow-hidden shadow-lg border-8 border-[#BDE0FE]">
+          <div className="w-full max-w-sm rounded-[3rem] overflow-hidden shadow-lg">
             <img
               src={vol1}
               alt="Volunteer feeding cat"
@@ -124,32 +124,42 @@ export default function VolunteerForm() {
 
         {/* CENTER COLUMN: Typography & Button */}
         <div className="flex flex-col items-center md:items-start text-center md:text-left z-10 space-y-4">
-          <h1 className="text-8xl md:text-10xl font-black tracking-wide leading-tight">
-            {/* "Lend a" - Beige/Orange Text with Outline */}
-            <span className="block text-[#add3fa]">Lend a</span>
-            {/* "Paw" - Blue Text with Outline */}
-            <span className="block text-center text-[#faefc3]">Paw</span>
-          </h1>
+          <h1 className="text-6xl md:text-7xl font-black tracking-wide leading-tight">
+            {/* "Lend a" with outline */}
+            <span
+              className="block text-[#fadfaa] text-9xl"
+              style={{ WebkitTextStroke: "1.5px #464646" }}
+            >
+              Lend a
+            </span>
+            {/* "Paw" with outline */}
+                  <span
+                    className="block text-[#b9ebfa] text-9xl text-center"
+                    style={{ WebkitTextStroke: "1.5px #464646" }}
+                  >
+                    Paw
+                  </span>
+                  </h1>
 
-          <p
-            className="text-gray-700 font-medium text-sm md:text-base max-w-xs"
-            style={{ fontFamily: "Poppins, sans-serif" }}
-          >
-            By volunteering, you help create a safer and more caring environment
-            for the campus cats of NU.
-          </p>
+                  <p
+                  className="text-gray-700 font-medium text-base md:text-lg max-w-md text-center"
+                  style={{ fontFamily: "Poppins, sans-serif" }}
+                  >
+                  By volunteering, you help create a safer and more caring environment
+                  for the campus cats of NU.
+                  </p>
 
-          <button
-            onClick={scrollToForm}
-            className="self-center mt-4 px-8 py-2 bg-white border-2 border-[#add3fa] rounded-full font-bold text-[#fadfaa] shadow-[4px_4px_0px_0px_rgba(173,211,250,1)] hover:translate-y-1 hover:shadow-none transition-all"
-          >
-            Apply Now
-          </button>
-        </div>
+                  <button
+                  onClick={scrollToForm}
+                  className="self-center mt-4 px-8 py-2 bg-[#fffff6] border-2 border-[#464646] rounded-full font-bold text-[#464646] transition-all"
+                  >
+                  Apply Now
+                  </button>
+                </div>
 
-        {/* RIGHT COLUMN: Flower/Cloud Shaped Image */}
+                {/* RIGHT COLUMN: Flower/Cloud Shaped Image */}
         <div className="relative z-10 transform rotate-3 transition-transform hover:rotate-0 duration-300">
-          <div className="w-full max-w-sm rounded-[40px] rounded-tl-[60px] rounded-br-[60px] overflow-hidden shadow-lg border-8 border-[#BDE0FE]">
+          <div className="w-full max-w-sm rounded-[40px] rounded-tl-[60px] rounded-br-[60px] overflow-hidden shadow-lg">
             <img
               src={vol2}
               alt="Volunteers with cats"
@@ -300,7 +310,7 @@ export default function VolunteerForm() {
             <div className="flex justify-end gap-3 pt-2">
               <button
                 type="submit"
-                className="px-6 py-3 rounded-full bg-[#add3fa] text-white font-semibold hover:scale-105 transition disabled:opacity-50"
+                className="px-6 py-3 rounded-full bg-[#add3fa] text-#464646 font-semibold hover:scale-105 transition disabled:opacity-50"
                 disabled={submitting}
               >
                 {submitting ? "Submitting..." : "Submit Application"}
@@ -310,7 +320,7 @@ export default function VolunteerForm() {
         </div>
 
         {/* Info Section */}
-        <div className="mt-8 bg-[#fadfaa] rounded-2xl p-6">
+        <div className="mt-8 bg-[#b9ebfa] rounded-2xl p-6">
           <h3 className="text-xl font-bold text-[#464646] mb-3">
             What You'll Do
           </h3>

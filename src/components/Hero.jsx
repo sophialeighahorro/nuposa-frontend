@@ -5,7 +5,8 @@ export default function Hero() {
   return (
     <div className="w-full lg:w-auto lg:absolute lg:left-50 lg:top-37.5 lg:max-w-217.5">
       {/* Hero Heading */}
-      <h1 className="font-black text-6xl sm:text-5xl md:text-6xl lg:text-[100px] leading-[0.925] text-[#add3fa] m-0 p-0" style={{ WebkitTextStroke: '2px #464646' }}>
+      <h1 className="font-black text-6xl sm:text-5xl md:text-6xl lg:text-[100px] leading-[0.925] text-[#add3fa] m-0 p-0" 
+          style={{ WebkitTextStroke: '2px #464646' }}>
         Where every <span className="text-[#fadfaa]">campus</span>
         <br />
         <span className="text-[#fadfaa]">cat</span> has a{" "}

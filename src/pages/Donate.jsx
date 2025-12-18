@@ -1,5 +1,6 @@
 import React from "react";
+import DonateSection from "../components/DonateSection";
 
 export default function Donate() {
-  return <div className="p-6">Donate Page</div>;
+  return <DonateSection />;
 }
